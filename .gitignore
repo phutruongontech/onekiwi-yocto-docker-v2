@@ -1,0 +1,7 @@
+*/build/
+layers/
+.repo/
+.vscode/
+image-*
+poky/
+meta-*
