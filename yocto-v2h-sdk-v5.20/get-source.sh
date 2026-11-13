@@ -16,10 +16,17 @@ cd meta-gplv2
 git checkout 60b251c25ba87e946a0ca4cdc8d17b1cb09292ac
 cd ../
 
-git clone https://github.com/OneKiwiTech/renesas-rz-meta.git meta-renesas
+# meta-renesas (OneKiwi RZ/V2H SOM, SDK 5.20: onekiwi-rzv2h-4gb, onekiwi-rzv2h-8gb, onekiwi-rzv2h-16gb)
+git clone https://github.com/OneKiwiEmbedded/renesas-rz-meta-4.git meta-renesas
 cd meta-renesas
-git checkout v2h-sdk-v5.20
+git checkout feature/onekiwi-rzv2h-4gb
 cd ../
+
+# Old meta-renesas:
+#git clone https://github.com/OneKiwiTech/renesas-rz-meta.git meta-renesas
+#cd meta-renesas
+#git checkout v2h-sdk-v5.20
+#cd ../
 
 git clone  https://github.com/meta-qt5/meta-qt5.git
 cd meta-qt5

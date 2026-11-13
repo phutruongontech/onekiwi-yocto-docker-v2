@@ -9,4 +9,7 @@ cd ~/yocto/build
 TEMPLATE=../meta-renesas/meta-onekiwi/conf/templates/${BOARD}
 cp ${TEMPLATE}/bblayers.conf.sample conf/bblayers.conf
 cp ${TEMPLATE}/local.conf.sample conf/local.conf
+
+# Old (meta-renesas built by Gemini, conf in meta-rzv2h/docs):
+#cp ../meta-renesas/meta-rzv2h/docs/template/conf/onekiwi-rzv2h-8gb/*.conf conf/
 bitbake core-image-weston
