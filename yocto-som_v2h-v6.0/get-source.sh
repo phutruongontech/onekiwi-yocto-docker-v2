@@ -24,5 +24,10 @@ cd meta-virtualization
 git checkout 02f72c96bf9acd0bd3ae0463f482bce8feabe749
 cd ..
 
+# meta-renesas (OneKiwi RZ/V2H SOM, SDK 6.0: onekiwi-rzv2h-4gb, onekiwi-rzv2h-8gb)
+git clone https://github.com/OneKiwiEmbedded/renesas-rz-meta-4.git meta-renesas
+cd meta-renesas
+git checkout feature/sdk60-onekiwi
+cd ..
+
 echo "Sources for Yocto Scarthgap SDK 6.0 downloaded."
-echo "Note: meta-renesas is expected to be provided alongside these directories."
