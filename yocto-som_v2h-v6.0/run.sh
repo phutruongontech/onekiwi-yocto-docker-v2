@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# Usage: ./run.sh [onekiwi-rzv2h-4gb | onekiwi-rzv2h-8gb]   (default: onekiwi-rzv2h-8gb)
-BOARD=${1:-onekiwi-rzv2h-8gb}
-
 source poky/oe-init-build-env
 cd ~/yocto/build
 
-TEMPLATE=../meta-renesas/meta-onekiwi/conf/templates/${BOARD}
-cp ${TEMPLATE}/bblayers.conf.sample conf/bblayers.conf
-cp ${TEMPLATE}/local.conf.sample conf/local.conf
+cp ../meta-renesas/meta-onekiwi/conf/templates/onekiwi-rzv2h-8gb/*.conf conf/
+#cp ../meta-renesas/meta-onekiwi/conf/templates/onekiwi-rzv2h-4gb/*.conf conf/
 
 # Old (meta-renesas built by Gemini, conf in meta-rzv2h/docs):
 #cp ../meta-renesas/meta-rzv2h/docs/template/conf/onekiwi-rzv2h-8gb/*.conf conf/
